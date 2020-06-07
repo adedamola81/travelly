@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+  color: white;
+}
+h2 {
+  font-size: 4rem;
+  color: white;
+}
+h3 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+p {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  font-size: 1.5rem;
+  color: white;
+  background: #4c6397;
+  border: none;
+  cursor: pointer;
+  transition: background 2s linear;
+}
+button:hover {
+  background-color: #131c27;
+}
+button:focus {
+  outline-style: solid;
+  outline-color: #fdfeff;
+}
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0rem;
+  z-index: 3;
+}
+
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(landing-page.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero-text {
+  padding: 5rem;
+}
+/* location*/
+#location {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("new-york-page.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+#location-head {
+  width: 90%;
+  margin: auto;
+}
+
+#location-head h2 {
+  color: black;
+  padding: 1rem 0rem;
+}
+
+#location-head h3 {
+  color: black;
+  padding: 4rem 0rem;
+  font-size: 2.5rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+
+.moving-cloud1 {
+  animation: animationcloud 3s ease-in-out alternate infinite;
+}
+.moving-cloud2 {
+  animation: animationcloud 3.5s ease-in-out alternate infinite;
+  z-index: -1;
+  opacity: 0.5;
+}
+/* keyframes*/
+@keyframes animationcloud {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+#benefits-head {
+  background-color: #131c27;
+  min-height: 30vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#benefits-head h2 {
+  margin: 1rem 0rem;
+}
+#cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-self: center;
+  align-items: center;
+  min-height: 70vh;
+}
+#card {
+  flex: 1 1 30rem;
+  margin: auto 5rem;
+  padding: auto;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+#cards img {
+  max-width: 20%;
+  padding: 1rem;
+}
+#iconbackground {
+  background-color: #131c27;
+}
+/* contact us*/
+#contacts {
+  min-height: 80vh;
+  background: url("contact-mountain.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-wrapper {
+  background-color: #131c27;
+  border-radius: 1rem;
+  text-align: center;
+  width: 60%;
+  color: white;
+
+  margin: auto;
+
+  text-align: center;
+}
+#form-head h3 {
+  font-size: 5rem;
+}
+#form-head {
+  text-align: center;
+  padding: 3rem;
+}
+
+#name-form,
+#email-form {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#contacts label {
+  font-size: 2rem;
+  padding: 0rem 3rem;
+}
+#contacts button {
+  width: 100%;
+  padding: auto;
+  margin-top: 6rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#contacts input {
+  width: 25rem;
+  height: 5rem;
+}
+footer {
+  background-color: #131c27;
+  color: white;
+}
+#footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
+  margin: auto;
+}
+#footer h3 {
+  flex: 1 1 30rem;
+  margin: auto;
+}
+
+#footer-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 30rem;
+  margin: auto 5rem;
+}
+
+#instagram,
+#twitter,
+#youtube {
+  margin: 0rem 5rem;
+  list-style: none;
+}
+/* media query*/
+@media screen and (max-width: 911px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1.5rem;
+  }
+  .cloud {
+    height: 40rem;
+  }
+  footer {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+}
